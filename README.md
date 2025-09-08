@@ -3,7 +3,7 @@
 ## Descrição
 Esta aplicação web interativa consome a PokéAPI para exibir uma lista de Pokémon, permitindo a busca e visualização de detalhes individuais. O design e a experiência do usuário são inspirados no site de exemplo fornecido.
 
-Utilizado como base: [Pokedex](https://otavionvs.github.io/Pokedex/) (créditos: https://github.com/otavionvs, meu professor de desenvolvimento de sistemas)
+Utilizado como base: [Pokedex](https://otavionvs.github.io/Pokedex/) por [Professor Neves](https://github.com/otavionvs), desenvolvedor de sistemas.
 
 ## Requisitos Funcionais
 

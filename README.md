@@ -3,7 +3,7 @@
 ## Descrição
 Esta aplicação web interativa consome a PokéAPI para exibir uma lista de Pokémon, permitindo a busca e visualização de detalhes individuais. O design e a experiência do usuário são inspirados no site de exemplo fornecido.
 
-Exemplo funcional: [Pokedex](https://otavionvs.github.io/Pokedex/)
+Exemplo funcional: [Pokedex](https://otavionvs.github.io/Pokedex/) (créditos: https://github.com/otavionvs)
 
 ## Requisitos Funcionais
 
@@ -29,7 +29,7 @@ Exemplo funcional: [Pokedex](https://otavionvs.github.io/Pokedex/)
    - **URL**: `https://pokeapi.co/api/v2/pokemon/{id_ou_nome}`
    - **Como Usar**: Substitua `{id_ou_nome}` pelo número do Pokémon (ex: 25) ou pelo seu nome em letras minúsculas (ex: pikachu). O objeto JSON retornado conterá todas as informações do Pokémon, incluindo a imagem oficial em `sprites.other['official-artwork'].front_default`.
 
-## Desejáveis
+## Requisições por parte do professor
 - Implementar um indicador de "Carregando..." enquanto os dados iniciais são buscados.
 - Adicionar paginação para navegar entre diferentes grupos de Pokémon.
 - Estilizar os "badges" de tipo com cores diferentes.

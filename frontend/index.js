@@ -11,6 +11,8 @@ async function fetchPokemon() {
     }
 }
 
+// a parte abaixo cria o card do pokémon e adiciona o evento de clique para abrir o modal com mais detalhes.
+
 function criarPokemonCard(pokemon) {
     const pokemonCard = document.createElement('div');
     pokemonCard.id = 'cardpokemon';
@@ -33,9 +35,9 @@ function criarPokemonCard(pokemon) {
     
     pokemonCard.addEventListener('click', () => {
         document.getElementById('pokemonModalChave').innerText = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
-        document.getElementById('pokemonModalImage').src = pokemon.sprites.other['official-artwork'].front_default;
+        document.getElementById('pokemonModalImagem').src = pokemon.sprites.other['official-artwork'].front_default;
         document.getElementById('pokemonModalId').innerText = `Número: #${pokemon.id}`;
-        document.getElementById('pokemonModalTypes').innerText = 'Tipos: ' + pokemon.types.map(t => t.type.name).join(', ');
+        document.getElementById('pokemonModalTipos').innerText = 'Tipos: ' + pokemon.types.map(t => t.type.name).join(', ');
         document.getElementById('pokemonModalStats').innerText = 'Status: ' + pokemon.stats.map(s => `${s.stat.name}: ${s.base_stat}`).join(' | ');
         new bootstrap.Modal(document.getElementById('pokemonModal')).show();
     });
